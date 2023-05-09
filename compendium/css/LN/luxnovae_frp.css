@@ -7,7 +7,11 @@
 /* ᐃᐃᐃ EKSTER_ALIA_KODO ᐃᐃᐃ */
 #lto_citajxo {
   font-family: "Cairo Play", "Cairo", sans-serif;
-  
+  font-style: oblique;
+  font-weight: 900;
+  text-decoration: 0.85px underline double #003153;
+  text-align: right;
+  color: #1a1110;
 }
 /* ᐃᐃᐃ ________________ ᐃᐃᐃ */
 
@@ -16,11 +20,6 @@
 #rkf_pkm_d {
   box-sizing: border-box;
   font-family: "Cairo Play", "Cairo", sans-serif;
-  font-style: oblique;
-  font-weight: 900;
-  text-decoration: 0.85px underline double #003153;
-  text-align: right;
-  color: #1a1110;
 }
 
 #rkf_pkm_d {
