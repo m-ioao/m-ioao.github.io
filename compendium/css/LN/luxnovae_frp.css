@@ -8,6 +8,7 @@
 #rkf_pkm_d *,
 #rkf_pkm_d {
   box-sizing: border-box;
+  font-family: "Cairo Play", "Cairo", sans-serif;
 }
 
 #rkf_pkm_d {
@@ -23,9 +24,8 @@
     #003153 68%,
     #dc143c
   );
-  font-family: "Cairo Play", "Cairo", sans-serif;
   font-style: normal;
-  font-size: 0.96em;
+  font-size: 1.19em;
   border-radius: 7px;
   color: #1a1110;
   padding-left: 51px;
