@@ -4,11 +4,23 @@
   override-colors: 0 #d14, 1 #0a4;
 }
 
+/* ᐃᐃᐃ EKSTER_ALIA_KODO ᐃᐃᐃ */
+#lto_citajxo {
+  font-family: "Cairo Play", "Cairo", sans-serif;
+  
+}
+/* ᐃᐃᐃ ________________ ᐃᐃᐃ */
+
 /* --- KOMPLETAN_BLOKON --- */
 #rkf_pkm_d *,
 #rkf_pkm_d {
   box-sizing: border-box;
   font-family: "Cairo Play", "Cairo", sans-serif;
+  font-style: oblique;
+  font-weight: 900;
+  text-decoration: 0.85px underline double #003153;
+  text-align: right;
+  color: #1a1110;
 }
 
 #rkf_pkm_d {
@@ -68,7 +80,6 @@
   font-style: oblique;
   font-weight: 900;
   font-size: 1.53em;
-  font-family: "Cairo Play";
   text-decoration: 0.85px underline double #003153;
 }
 
