@@ -78,9 +78,10 @@
   width: 100%;
   min-height: 306px;
   text-align: justify;
+  padding: 34px 17px 34px 34px;
   font-size: 0.96em;
   font-weight: 500;
-  line-height: 1.1em;
+  line-height: 17px;
   align-items:center;
 
 }
@@ -88,6 +89,7 @@
 #rkf_pkm_d .korpteksto p:not(p.dialogo) {
   margin: 0;
   columns:2;
+  gap:34px;
 }
 
 #rkf_pkm .korpteksto .duobla {
@@ -101,9 +103,9 @@
   font-style: oblique;
   font-weight: 900;
   padding: 0 17px;
-  float: right;
+  width: 85%;
   margin: 11px;
-  border-right: 1.7px solid;
+  border-right: 3.4px solid;
   text-indent: -17px;
 }
 
@@ -187,7 +189,7 @@
 }
 
 #rkf_pkm_d aside .kompano::before {
-  content: "& ";
+  content: "& ";
 }
 
 /* pokemonan_skipon */
@@ -222,7 +224,7 @@
 
 #rkf_pkm_d aside .seingo::after {
   color: aquamarine;
-  content: " \0626";
+  content: " \0626";
 }
 
 /* animacion */
