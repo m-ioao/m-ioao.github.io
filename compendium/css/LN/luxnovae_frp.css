@@ -98,13 +98,8 @@
 
 #rkf_pkm_d .korpteksto p:not(p.dialogo) {
   margin: 0;
-  columns:2;
-  gap:34px;
 }
 
-#rkf_pkm .korpteksto .duobla {
-  grid-column: span 2;
-}
 
 /* dialogo */
 #rkf_pkm_d .korpteksto p.dialogo {
@@ -137,7 +132,6 @@
 #rkf_pkm_d section > .finnoto {
   font-style: oblique;
 }
-
 
 /* MARGXENON_(DEKSTRE) */
 #rkf_pkm_d aside {
@@ -235,6 +229,24 @@
 #rkf_pkm_d aside .seingo::after {
   color: aquamarine;
   content: " \0626";
+}
+
+/* esceptaj kaj kromaj klauxzoj */
+.solo, .sennoto {
+  visibility: hidden;
+}
+
+
+
+.sennoto {
+  display: none !important;
+
+}
+
+/* duobla kolumno */
+#rkf_pkm_d .korpteksto p.duobla {
+  columns:2;
+  gap:34px;
 }
 
 /* animacion */
