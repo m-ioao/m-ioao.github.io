@@ -101,6 +101,12 @@
   margin: 0;
 }
 
+#rkf_pkm_d .korpteksto p:first-of-type::first-letter:not(p.dialogo) {
+  color: #dc143c;
+  font-weight:700;
+  font-size: 170%;
+}
+
 
 /* dialogo */
 #rkf_pkm_d .korpteksto p.dialogo {
@@ -238,17 +244,14 @@
   visibility: hidden;
 }
 
-
-
 .sennoto {
   display: none !important;
-
 }
 
 /* duobla kolumno */
 #rkf_pkm_d .korpteksto p.duobla {
   columns:2;
-  gap:34px;
+  gap:25.5px;
 }
 
 /* animacion */
