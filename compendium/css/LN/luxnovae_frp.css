@@ -101,7 +101,7 @@
   margin: 0;
 }
 
-#rkf_pkm_d .korpteksto p:first-of-type::first-letter:not(p.dialogo) {
+#rkf_pkm_d .korpteksto p:first-of-type:not(p.dialogo)::first-letter {
   color: #dc143c;
   font-weight:700;
   font-size: 170%;
