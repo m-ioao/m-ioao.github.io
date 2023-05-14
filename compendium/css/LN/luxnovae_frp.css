@@ -139,6 +139,7 @@
 /* finnoto */
 #rkf_pkm_d section > .finnoto {
   font-style: oblique;
+  width: 68%;
 }
 
 /* MARGXENON_(DEKSTRE) */
@@ -222,13 +223,13 @@
 #rkf_pkm_d aside .seingo {
   display: inline-flex;
   background-color: #f5fffaad;
-  padding: 3.4px 6.8px;
-  margin-right: 11px;
+  width: 51%;
+  padding: 11px;
   margin-bottom: 11px;
   font-weight: 900;
   font-size: 13.6px;
   border-radius: 0 5.1px 5.1px 0;
-  align-self: flex-end;
+  align-self: end;
   color: mintcream;
   text-shadow: 0 0 17px black;
   text-transform: lowercase;
