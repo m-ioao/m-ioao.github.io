@@ -88,7 +88,8 @@
   width: 100%;
   min-height: 306px;
   text-align: justify;
-  padding: 34px 17px 34px 34px;
+  padding: 25.5px;
+  padding-right: 17px;
   font-size: 0.96em;
   font-weight: 500;
   line-height: 17px;
@@ -108,8 +109,9 @@
   font-style: oblique;
   font-weight: 900;
   padding: 0 17px;
-  width: 85%;
-  margin: 11px;
+  align-self: flex-end;
+  margin-right: 51px;
+  margin-left: 51px;
   border-right: 3.4px solid;
   text-indent: -17px;
 }
