@@ -44,40 +44,38 @@
       <input type="submit" value="Générer le code">
     </form>
 
-
     <script>
-    function genererCode() {
-       // Récupération des données du formulaire
-       const titre = document.getElementById("titre").value;
-       const paragraphe1 = document.getElementById("paragraphe1").value;
-       const paragraphe2 = document.getElementById("paragraphe2").value;
-       const paragraphe3 = document.getElementById("paragraphe3").value;
-       const paragraphe4 = document.getElementById("paragraphe4").value;
+      function genererCode() {
+        // Récupération des données du formulaire
+        const titre = document.getElementById("titre").value;
+        const paragraphe1 = document.getElementById("paragraphe1").value;
+        const paragraphe2 = document.getElementById("paragraphe2").value;
+        const paragraphe3 = document.getElementById("paragraphe3").value;
+        const paragraphe4 = document.getElementById("paragraphe4").value;
 
-       // Création du code HTML
-       const code = `
-           <h1>${titre}</h1>
-           <p>${paragraphe1}</p>
-           <p>${paragraphe2}</p>
-           <p>${paragraphe3}</p>
-           <p>${paragraphe4}</p>
-       `;
+        // Création du code HTML
+        const code = `
+            <h1>${titre}</h1>
+            <p>${paragraphe1}</p>
+            <p>${paragraphe2}</p>
+            <p>${paragraphe3}</p>
+            <p>${paragraphe4}</p>
+        `;
 
-       // Affichage du code HTML dans une balise <code>
-       const codeElement = document.createElement("code");
-       codeElement.textContent = code;
-       document.querySelector("body").appendChild(codeElement);
+        // Affichage du code HTML dans une balise <code>
+        const codeElement = document.createElement("code");
+        codeElement.textContent = code;
+        document.body.appendChild(codeElement);
 
-       // Activation du copier/coller
-       codeElement.addEventListener("click", function() {
-         codeElement.select();
-         document.execCommand("copy");
-       });
-     }
+        // Activation du copier/coller
+        codeElement.addEventListener("click", function() {
+          codeElement.select();
+          document.execCommand("copy");
+        });
+      }
 
-     // Ajout d'un événement au bouton de soumission
-     document.querySelector("form").addEventListener("submit", genererCode);
-
+      // Ajout d'un événement au bouton de soumission
+      document.querySelector("form").addEventListener("submit", genererCode);
     </script>
 
     <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
