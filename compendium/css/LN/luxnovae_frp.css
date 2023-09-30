@@ -94,7 +94,7 @@
   font-weight: 500;
   line-height: 17px;
   align-items:center;
-
+  font-family: "Cairo", sans-serif;
 }
 
 #rkf_pkm_d .korpteksto p:not(p.dialogo) {
