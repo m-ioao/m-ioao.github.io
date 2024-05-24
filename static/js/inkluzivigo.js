@@ -1,23 +1,30 @@
 function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    file = elmnt.getAttribute("w3-include-html");
+  var elements = document.querySelectorAll('[w3-include-html]');
+
+  elements.forEach(function(elmnt) {
+    var file = elmnt.getAttribute('w3-include-html');
     if (file) {
-      xhttp = new XMLHttpRequest();
+      var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          elmnt.innerHTML = this.responseText;
-          elmnt.removeAttribute("w3-include-html");
+          // Crée un conteneur temporaire pour le contenu chargé
+          var tempDiv = document.createElement('div');
+          tempDiv.innerHTML = this.responseText;
+
+          // Remplace l'élément actuel par le contenu chargé
+          while (tempDiv.firstChild) {
+            elmnt.parentNode.insertBefore(tempDiv.firstChild, elmnt);
+          }
+          elmnt.parentNode.removeChild(elmnt);
+
+          // Recommence pour les nouveaux éléments chargés
           includeHTML();
         }
       }
       xhttp.open("GET", file, true);
       xhttp.send();
-      return;
     }
-  }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", includeHTML);
