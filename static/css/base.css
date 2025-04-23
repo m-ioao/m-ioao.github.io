@@ -1,0 +1,42 @@
+/* Google Fonts & Reset */
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+/* Reset & Defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clair);
+  font-family: 'Raleway', sans-serif;
+  color: var(--sombre);
+}
+
+a {
+  color: var(--sombre);
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cyanvert);
+}
+
+/* Variables */
+:root {
+  --sombre: #07191B;
+  --clair: #F4F4E4;
+  --jaune: #FFDD33;
+  --rouge: #AA2233;
+  --cyanvert: #22BBBB;
+  --vertcyan: #33BB99;
+  --naphte: #055;
+}
