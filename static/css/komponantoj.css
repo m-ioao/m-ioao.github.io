@@ -1,0 +1,45 @@
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav li {
+  font-weight: bold;
+}
+
+nav a {
+  font-family: 'Cairo Play', cursive;
+  font-size: 1.2rem;
+}
+
+/* Citations */
+main q {
+  display: block;
+  font-style: italic;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 2rem auto;
+  font-family: 'Special Elite', serif;
+}
+
+/* Boutons génériques */
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid var(--sombre);
+  background-color: var(--sombre);
+  color: var(--clair);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--clair);
+  color: var(--sombre);
+}
