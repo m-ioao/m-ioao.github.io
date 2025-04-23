@@ -1,0 +1,38 @@
+/* 404 Page */
+#p404 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+#p404 #gauche,
+#p404 #droite {
+  flex: 1 1 45%;
+  padding: 1.5rem;
+}
+
+#p404 #droite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Cairo Play', sans-serif;
+}
+
+#p404 #droite h2 {
+  font-size: 2.5rem;
+}
+
+#p404 #droite p {
+  font-size: 1.3rem;
+  max-width: 80%;
+}
+
+#p404 #droite a {
+  margin-top: 2rem;
+}
+
+/* Projektoj (à venir) */
+/* #projektoj .project-card { ... } */
